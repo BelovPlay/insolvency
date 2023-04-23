@@ -971,3 +971,96 @@
 .jur-consult__image{
     position:relative;
 }
+.jurist__text-info,.jur__dop-info{
+    position:absolute;
+    box-sizing: border-box;
+}
+.jurist__text-info{
+    background: linear-gradient(113.84deg, #307FE2 0%, #3197F4 100%);
+    padding:31px 70px;
+    text-align: center;
+    left:750px;
+    top:-310px;
+}
+.jur__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.jur__subtitle{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.jur__dop-info{
+    box-sizing: border-box;
+    background: linear-gradient(113.84deg, #307FE2 0%, #3197F4 100%);
+    display:flex;
+    align-items: start;
+    padding:19px 26px;
+    left:830px;
+    top:-180px;
+}
+.dop-info__describe{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-left:14px;
+}
+/* styles for bankruptcy */
+.offer-bankruptcy{
+    background:url('../img/bg-offer-bankruptcy.svg') no-repeat;
+}
+.offer-bankruptcy__content{
+    position: relative;
+    text-align: center;
+    padding-top:70px;
+    padding-bottom:200px;
+    margin-bottom: 200px;
+}
+.offer-bankruptcy__title{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 63px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom:50px;
+}
+.offer-bankruptcy__text-describe{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 62px;
+}
+.offer-bankruptcy__link{
+    background: #F9E547;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #1E1E1E;
+    text-decoration: none;
+    padding:30px 40px;
+    margin:auto;
+}
+.offer-bankruptcy__wallet-left,.offer-bankruptcy__wallet-right{
+    position:absolute;
+}
+.offer-bankruptcy__wallet-left{
+    top:50px;
+    left:-400px;
+}
+.offer-bankruptcy__wallet-right{
+    top:-100px;
+    left:900px;
+}
+/* styles for questions */
