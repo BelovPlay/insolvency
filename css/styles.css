@@ -760,3 +760,38 @@
     padding: 30px 63px;
     font-weight: bold;
 }
+.working-process__title{
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 63px;
+    text-align: center;
+    color: #1E1E1E;
+    margin-bottom: 92px;
+}
+.working-process__list-items{
+    margin-left:270px;
+    width:1000px;
+    margin-bottom: 150px;
+}
+.working-process__item{
+    margin-bottom: 50px;
+}
+.working-process__title-item{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    display:inline-block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.working-process__item-describe{
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+    margin-left:20px;
+    font-weight:500;
+}
+.working-process__content{
+    margin-bottom: 150px;
+}
