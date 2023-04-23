@@ -666,6 +666,7 @@
 }
 .checklist{
     background:url('../img/bg-checklist.svg');
+    margin-bottom:200px;
 }
 .checklist__content{
     display:flex;
@@ -707,5 +708,55 @@
 }
 .checklist__link-get-checklist{
     margin-left: -20px;
+    font-weight: bold;
+}
+/* styles for win-cases */
+.offer{
+    background:#307FE2;
+    margin-bottom: 200px;
+}
+.offer__content{
+    display:flex;
+    align-items: center;  
+    justify-content:space-around;
+    position: relative; 
+}
+.offer-image{
+    width:800px;
+    height:690px;
+    top:0px;
+    left:-400px;
+    position:absolute;
+}
+.offer__text{
+    margin-left:0px;
+    padding-top:120px;
+    padding-bottom:150px;
+}
+.offer__title{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 63px;
+    color: #FFFFFF;
+}
+.offer__subtitle{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin-top:48px;
+    margin-bottom:70px;
+}
+.offer__link{
+    background: #F9E547;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #1E1E1E;
+    display:inline-block;
+    box-sizing: border-box;
+    padding: 30px 63px;
     font-weight: bold;
 }
