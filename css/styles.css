@@ -711,6 +711,33 @@
     font-weight: bold;
 }
 /* styles for win-cases */
+.win-cases__title{
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #307FE2;
+    width:870px;
+    text-align: center;
+    margin:auto;
+}
+.win-cases__title span{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #F9E547;
+}
+.win-cases__slider{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 160px;
+    margin-bottom:50px;
+}
+/* styles for offer */
 .offer{
     background:#307FE2;
     margin-bottom: 200px;
