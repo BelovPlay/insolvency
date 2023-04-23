@@ -844,6 +844,7 @@
 }
 .numbers__content{
     margin-top: 90px;
+    margin-bottom:150px;
 }
 .numbers__list-items{
     display:flex;
@@ -868,4 +869,105 @@
     font-size: 16px;
     line-height: 200%;
     color: #5E5E5E;
+}
+/* styles for reviews */
+.switcher__videos{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.video{
+    display:flex;
+    justify-content:space-evenly;
+}
+.video-image:hover{
+    cursor:pointer;
+}
+.reviews__title{
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 63px;
+    text-align: center;
+    color: #1E1E1E;
+    margin-bottom:50px;
+}
+.reviews__title span{
+    color:#5E5E5E
+}
+.block__control{
+    display:flex;
+    justify-content:space-between;
+    width:280px;
+    margin:auto;
+    margin-bottom:50px;
+}
+.btn-switcher{
+    outline:none;
+    border:none;
+    background:transparent;
+    text-transform:uppercase;
+    color:#fff;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.btn-switcher:hover{
+    cursor:pointer;
+}
+.btn-active{
+    background: #307FE2;
+    width: 157px;
+    height: 60px;
+}
+.btn-unactive{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #307FE2;
+}
+.reviews__content{
+    margin-bottom:150px;
+}
+/* styles for section jur-consult */
+.jur-consult{
+    padding-top:100px;
+    box-sizing: border-box;
+    background:url('../img/bg-jur.png') no-repeat;
+    margin-bottom: 150px;
+}
+.jur-consult__title{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 63px;
+    color: #FFFFFF;
+    margin-bottom:65px;
+}
+.jur-consult__describe-text{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+.jur-consult__link{
+    background: #F9E547;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #1E1E1E;
+    box-sizing: border-box;
+    padding:29px 32px;
+    text-decoration: none;
+    display:inline-block;
+    margin-top:70px;
+    margin-bottom:75px;
+}
+.jur-consult__image{
+    position:relative;
 }
