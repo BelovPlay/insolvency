@@ -7,7 +7,6 @@
     margin:auto;
 }
 .wrapper{
-    width:1920px;
     background:url('../img/bg-wrapper.svg');
 }
 .container{
@@ -341,7 +340,7 @@
 .image-keys{
     position:absolute;
     left:-250px;
-    top:-200px;
+    top:-100px;
 }
 .image-fly{
     position:absolute;
@@ -666,20 +665,22 @@
     color: #5E5E5E;
 }
 .checklist{
-    background:url('../img/bg-checklist.svg');
+    background:url('../img/bg-checklist.svg') no-repeat;
     margin-bottom:200px;
 }
 .checklist__content{
     display:flex;
     justify-content:space-around;
     align-items: center;
+    margin-left: 230px;
+    width: 890px;
 }
 .checklist__image{
     position: relative;
 }
 .checklist-image{
     position:absolute;
-    left:-500px;
+    left:-600px;
     top:-430px;
 }
 .checklist__text{
@@ -810,8 +811,11 @@
     width:800px;
     height:690px;
     top:0px;
-    left:-400px;
+    left:0px;
     position:absolute;
+}
+.offer__image{
+    width: 800px;
 }
 .offer__text{
     margin-left:0px;
@@ -1142,7 +1146,7 @@
 }
 .offer-bankruptcy__wallet-left{
     top:50px;
-    left:-400px;
+    left:-300px;
 }
 .offer-bankruptcy__wallet-right{
     top:-100px;
