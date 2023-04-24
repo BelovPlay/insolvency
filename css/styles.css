@@ -7,7 +7,7 @@
     margin:auto;
 }
 .wrapper{
-    background:url('../img/bg-wrapper.svg');
+    background:url('../img/bg-wrapper.svg') no-repeat;
 }
 .container{
     width:1240px;
@@ -31,9 +31,23 @@
 .socials__list-items{
     display:flex;
     list-style-type:none;
+    margin-left: -150px;
 }
 .socials__item{
-    margin-right:5px;
+    margin-right:15px;
+    background:#3197F4;
+    border-radius:50%;
+}
+.socials__item:hover{
+    background:#fff;
+}
+.socials__link{
+    display:inline-block;
+    padding-top:13px;
+    padding-right:15px;
+    padding-bottom:10px;
+    padding-left:15px;
+    color:#3197F4;
 }
 .contacts{
     display:flex;
@@ -750,8 +764,8 @@
     margin-bottom:50px;
 }
 .image__scan{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left:50px;
+    margin-right:75px;
 }
 .counter__slider-progress{
     text-align:center;
@@ -977,6 +991,7 @@
     display:flex;
     align-items: center;
     justify-content:space-between;
+    position: relative;
 }
 .video{
     display:flex;
@@ -1192,6 +1207,7 @@
 }
 .accordeon__header:hover{
     cursor:pointer;
+    color:#307FE2;
 }
 .accordeon__header::before{
     content: "";
@@ -1274,8 +1290,8 @@
 }
 .footer__list-items{
     position:absolute;
-    top:-75px;
-    left:550px;
+    top:-100px;
+    left:700px;
 }
 .more-questions__text{
     margin-bottom: 150px;
@@ -1438,4 +1454,59 @@
 }
 .link-cases__arrow{
     margin-right:90px;
+    background-color: #c4c4c4;
+    display:inline-block;
+    border-radius:50%;
+    padding: 27px;
+}
+.link__arrow-backward,.link__arrow-forward{
+    background-color:#307FE2;
+    border-radius:50%;
+    padding: 40px;
+    display:inline-block;
+}
+.link__arrow-forward:hover,.link__arrow-backward:hover{
+    background: #3197F4;
+}
+.link-cases__arrow:hover{
+    background-color:#307FE2;
+}
+.link-arrow{
+    background-color: #c4c4c4;
+    border-radius:50%;
+    display:inline-block;
+    padding: 20px;
+}
+.link-arrow__forward{
+    background-color: #307FE2;
+}
+.link-play{
+    position:absolute;
+    display:inline-block;
+    padding:25px;
+    background-color:#307FE2;
+    border-radius:50%;
+    top:50px;
+    left:1000px;
+    top:75px;
+}
+.link-play:hover{
+    background:#3197F4;
+}
+.link-play-first{
+    left:250px;
+}
+.link-play-second{
+    left:600px;
+}
+.link-play-third{
+    left:950px;
+}
+.link-arrow:hover{
+    background-color:#307FE2;
+}
+section{
+    margin:auto;
+    width: 1920px;
+    border:1px solid black;
 }
