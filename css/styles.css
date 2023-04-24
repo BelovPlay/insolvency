@@ -57,6 +57,10 @@
     display:flex;
     align-items: center;
 }
+.contacts__link-get-call:hover{
+    cursor:pointer;
+    color:#307FE2;
+}
 .get-call-image{
     margin-right:9px;
 }
@@ -370,6 +374,9 @@
     justify-content: space-around;
     margin-bottom:100px;
 }
+.proposal__link:hover{
+    background:#FFF07C;
+}
 /* styles for benefits */
 .benefits__cards-features{
     display:flex;
@@ -650,6 +657,9 @@
     height:80px;
     width: 380px;
 }
+.link-request:hover{
+    background:#3197F4;
+}
 .link-request__image{
     margin-left: 20px;
 }
@@ -764,6 +774,9 @@
     cursor: pointer;
     background: #307FE2;
     height:10px;
+}
+.pagination-line:hover{
+    background:#A5E1FD;
 }
 .pagination-active{
     display: block;
@@ -995,21 +1008,23 @@
     border:none;
     background:transparent;
     text-transform:uppercase;
-    color:#fff;
+    color:#307FE2;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    width: 157px;
+    height: 60px;
 }
 .btn-switcher:hover{
     cursor:pointer;
+    background-color:#307FE2;
+    color:white;
 }
 .btn-active{
-    background: #307FE2;
-    width: 157px;
-    height: 60px;
+    margin-right:25px;
 }
 .btn-unactive{
     font-weight: 600;
@@ -1056,6 +1071,9 @@
     display:inline-block;
     margin-top:70px;
     margin-bottom:75px;
+}
+.jur-consult__link:hover{
+    background:#FFF07C;
 }
 .jur-consult__image{
     position:relative;
