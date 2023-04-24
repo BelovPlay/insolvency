@@ -8,6 +8,7 @@
 }
 .wrapper{
     background:url('../img/bg-wrapper.svg') no-repeat;
+    width: 1920px;
 }
 .container{
     width:1240px;
@@ -1504,9 +1505,4 @@
 }
 .link-arrow:hover{
     background-color:#307FE2;
-}
-section{
-    margin:auto;
-    width: 1920px;
-    border:1px solid black;
 }
