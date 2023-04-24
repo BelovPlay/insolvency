@@ -569,6 +569,7 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    background-color:rgba(234, 247, 222, 1);
 }
 .card-rate__title{
     padding-top:100px;
