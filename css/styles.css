@@ -737,6 +737,9 @@
     margin-left: -20px;
     font-weight: bold;
 }
+.checklist__link-get-checklist:hover{
+    background:#FFF07C;
+}
 /* styles for win-cases */
 .win-cases__title{
     font-weight: 700;
@@ -849,6 +852,7 @@
     margin-left:0px;
     padding-top:120px;
     padding-bottom:150px;
+    margin-left: 150px;
 }
 .offer__title{
     font-weight: 700;
@@ -876,6 +880,9 @@
     box-sizing: border-box;
     padding: 30px 63px;
     font-weight: bold;
+}
+.offer__link:hover{
+    background:#FFF07C;
 }
 .working-process__title{
     font-weight: 600;
@@ -916,6 +923,7 @@
 /* styles for owner section */
 .owner__content{
     text-align: center;
+    position: relative;
 }
 .owner__title{
     font-weight: 600;
@@ -1174,6 +1182,9 @@
     text-decoration: none;
     padding:30px 40px;
     margin:auto;
+}
+.offer-bankruptcy__link:hover{
+    background-color:#FFF07C;
 }
 .offer-bankruptcy__wallet-left,.offer-bankruptcy__wallet-right{
     position:absolute;
@@ -1505,4 +1516,15 @@
 }
 .link-arrow:hover{
     background-color:#307FE2;
+}
+.image-video-play{
+    position:absolute;
+    left:600px;
+    top:500px;
+    background-color:#307FE2;
+    padding:55px;
+    border-radius:50%;
+}
+.image-video-play:hover{
+    background-color:#3197F4;
 }
