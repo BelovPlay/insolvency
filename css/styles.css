@@ -39,9 +39,6 @@
     background:#3197F4;
     border-radius:50%;
 }
-.socials__item:hover{
-    background:#fff;
-}
 .socials__link{
     display:inline-block;
     padding-top:13px;
