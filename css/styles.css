@@ -1532,7 +1532,7 @@
 /* Модалки */
 .modal-window-get-consult{
     position:fixed;
-    display:block;
+    display:none;
     top:0;
     left:0;
     width:100%;
@@ -1582,6 +1582,7 @@
     outline:none;
     border:none;
     padding:26px 38px;
+    padding-left: 50px;
 }
 .modal-window__form-consult{
     display:flex;
@@ -1597,7 +1598,7 @@
     font-size: 18px;
     line-height: 22px;
     color: #1E1E1E;
-    text-align: center;
+    margin-left:50px;
 }
 .modal-window__get-consult{
     background: #307FE2;
@@ -1623,5 +1624,14 @@
     left:-250px;
 }
 .modal-window__get-consult:hover{
+    cursor: pointer;
+}
+.close-modal-window{
+    height: 30px;
+    position:absolute;
+    left:230px;
+    top:100px;
+}
+.close-modal-window:hover{
     cursor: pointer;
 }
