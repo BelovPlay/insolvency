@@ -1530,7 +1530,7 @@
 
 
 /* Модалки */
-.modal-window-get-consult{
+.modal-window-get-consult,.modal-window-get-call{
     position:fixed;
     display:none;
     top:0;
@@ -1542,7 +1542,7 @@
     background:rgba(0,0,0,.7);
     z-index:100;
 }
-.modal-window-get-consult__content{
+.modal-window-get-consult__content,.modal-window-get-phone__content{
     display:flex;
     align-items: center;
     background-color: #fff;
@@ -1612,7 +1612,7 @@
     box-sizing: border-box;
     padding:27px 29px;
 }
-.modal-window-get-consult__image{
+.modal-window-get-consult__image,.modal-window-get-phone__image{
     position: relative;
     z-index:-1;
     top:-100px;
@@ -1622,6 +1622,11 @@
     position:absolute;
     top:-300px;
     left:-250px;
+}
+.form-image-phone{
+    position:absolute;
+    top:-250px;
+    left:-300px;
 }
 .modal-window__get-consult:hover{
     cursor: pointer;
