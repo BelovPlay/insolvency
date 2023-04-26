@@ -3,7 +3,7 @@ let openModalWindowGetCall=document.getElementById('contacts__link-get-call'); /
 let modalWindowGetCall=document.getElementById('modal-window-get-call'); // Модальное окно заказа звонка
 let closeModalWindowGetCall=document.getElementById('close-modal-window-get-call'); // Кнопка для закрытия модального окна
 let MobileNumberModalWindowGetCall=document.getElementById('modal-window__input-get-call'); // поле для ввода мобильного телефона
-let BtnGetCall=document.getElementById('modal-window__get-call'); // кнопка для заявки
+let BtnGetCall=document.getElementById('modal-window__get-call'); // кнопка для заявки на получение звонка
 let phoneNumbersForCalling=[]; // номера телефонов для обзвона 
 let ModalWindowSuccces=document.getElementById('modal-window-get-receiving-request'); // окно успешного получения телефонного номера
 let BtnSuccess=document.getElementById('modal-window-get-receiving-request__link'); // кнопка подтверждения успешной заявки
@@ -34,4 +34,46 @@ BtnSuccess.addEventListener('click',function(){
     modalWindowGetCall.style.display='none';
     ModalWindowSuccces.style.display='none';
     MobileNumberModalWindowGetCall.value='';
+})
+
+//Модальное окна получения консультации
+// Ссылка для открытия модального окна получения консультации
+let openModalWindowGetConsult=document.getElementById('get-consult');
+// Модальное окно получения консультации
+let modalWindowGetConsult=document.getElementById('modal-window-get-consult');
+// Кнопка для закрытия модального окна получения консультации
+let closeModalWindowGetConsult=document.getElementById('close-modal-window-get-consult');
+// поле для ввода мобильного телефона
+let MobileNumberModalWindowGetConsult=document.getElementById('modal-window__input-get-consult');
+// кнопка для заявки получения консультации
+let BtnGetConsult=document.getElementById('modal-window__get-consult');
+// номера телефонов для предоставления консультаций
+let phoneNumbersForConsult=[];
+// Функция открытия модального окна получения консультации
+openModalWindowGetConsult.addEventListener('click',function(){
+    event.preventDefault();
+    modalWindowGetConsult.style.display='block';
+})
+// Функция закрытия модального окна получения консультации
+closeModalWindowGetConsult.addEventListener('click',function(){
+    modalWindowGetConsult.style.display='none';
+    MobileNumberModalWindowGetConsult.value='';
+})
+// Функция отправки номера в массив при прохождении валидации получения консультации
+BtnGetConsult.addEventListener('click',function(){
+    event.preventDefault();
+    if((MobileNumberModalWindowGetConsult.value[0]==8 && MobileNumberModalWindowGetConsult.value.length<12 && MobileNumberModalWindowGetConsult.value.length>10) ||(MobileNumberModalWindowGetConsult.value[0]==7 && MobileNumberModalWindowGetConsult.value.length<12 && MobileNumberModalWindowGetConsult.value.length>10)||(MobileNumberModalWindowGetConsult.value[0]=='+' && (MobileNumberModalWindowGetConsult.value)[1]=='7' && MobileNumberModalWindowGetConsult.value.length<13 && MobileNumberModalWindowGetConsult.value.length>11)){
+        phoneNumbersForConsult.push(MobileNumberModalWindowGetCall.value);
+        console.log(phoneNumbersForConsult);
+        ModalWindowSuccces.style.display='block';
+    }else{
+        alert('Проверь корректность введеных данных');
+    }
+})
+// Кнопка для скрытия модальных окон и очищения инпута получения консультации
+BtnSuccess.addEventListener('click',function(){
+    event.preventDefault();
+    modalWindowGetConsult.style.display='none';
+    ModalWindowSuccces.style.display='none';
+    MobileNumberModalWindowGetConsult.value='';
 })
