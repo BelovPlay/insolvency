@@ -1078,7 +1078,7 @@
 .jur-consult{
     padding-top:100px;
     box-sizing: border-box;
-    background:url('../img/bg-jur.png') no-repeat;
+    background:url('../img/bg-jur.png.svg') no-repeat;
     margin-bottom: 150px;
 }
 .jur-consult__title{
