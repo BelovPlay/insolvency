@@ -1537,11 +1537,14 @@
     left:0;
     width:100%;
     height:100%;
-    /* justify-content:center; */
-    /* align-items:center; */
+    justify-content:center;
+    align-items:center;
     background:rgba(0,0,0,.7);
     z-index:100;
 }
+/* .modal-window-get-call{
+    display:block;
+} */
 .modal-window-get-consult__content,.modal-window-get-phone__content,.modal-window-get-receiving-request__content{
     display:flex;
     align-items: center;
