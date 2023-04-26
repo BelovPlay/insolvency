@@ -63,7 +63,7 @@ closeModalWindowGetConsult.addEventListener('click',function(){
 BtnGetConsult.addEventListener('click',function(){
     event.preventDefault();
     if((MobileNumberModalWindowGetConsult.value[0]==8 && MobileNumberModalWindowGetConsult.value.length<12 && MobileNumberModalWindowGetConsult.value.length>10) ||(MobileNumberModalWindowGetConsult.value[0]==7 && MobileNumberModalWindowGetConsult.value.length<12 && MobileNumberModalWindowGetConsult.value.length>10)||(MobileNumberModalWindowGetConsult.value[0]=='+' && (MobileNumberModalWindowGetConsult.value)[1]=='7' && MobileNumberModalWindowGetConsult.value.length<13 && MobileNumberModalWindowGetConsult.value.length>11)){
-        phoneNumbersForConsult.push(MobileNumberModalWindowGetCall.value);
+        phoneNumbersForConsult.push(MobileNumberModalWindowGetConsult.value);
         console.log(phoneNumbersForConsult);
         ModalWindowSuccces.style.display='block';
     }else{
