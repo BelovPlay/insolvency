@@ -1530,19 +1530,19 @@
 
 
 /* Модалки */
-.modal-window-get-consult,.modal-window-get-call{
+.modal-window-get-consult,.modal-window-get-call,.modal-window-get-receiving-request{
     position:fixed;
     display:none;
     top:0;
     left:0;
     width:100%;
     height:100%;
-    justify-content:center;
-    align-items:center;
+    /* justify-content:center; */
+    /* align-items:center; */
     background:rgba(0,0,0,.7);
     z-index:100;
 }
-.modal-window-get-consult__content,.modal-window-get-phone__content{
+.modal-window-get-consult__content,.modal-window-get-phone__content,.modal-window-get-receiving-request__content{
     display:flex;
     align-items: center;
     background-color: #fff;
@@ -1556,7 +1556,7 @@
 .modal-window-get-consult__text{
     z-index:0;
 }
-.modal-window__content-title{
+.modal-window__content-title,.modal-window-get-receiving-request__title{
     font-weight: 600;
     font-size: 52px;
     line-height: 63px;
@@ -1564,13 +1564,16 @@
     margin-bottom:24px;
     text-align: left;
 }
-.modal-window__content-text-describe{
+.modal-window__content-text-describe,.modal-window-get-receiving-request__text-describe{
     font-weight: 400;
     font-size: 16px;
     line-height: 170%;
     color: #1E1E1E;
     margin-bottom:50px;
     text-align: left;
+}
+.modal-window-get-receiving-request__text-describe{
+    text-align: center;
 }
 .modal-window__content-text-describe span{
     font-weight: bold;
@@ -1600,7 +1603,7 @@
     color: #1E1E1E;
     margin-left:50px;
 }
-.modal-window__get-consult{
+.modal-window__get-consult,.modal-window-get-receiving-request__link{
     background: #307FE2;
     border:none;
     outline:none;
@@ -1611,6 +1614,7 @@
     color: #FFFFFF;
     box-sizing: border-box;
     padding:27px 29px;
+    text-decoration: none;
 }
 .modal-window-get-consult__image,.modal-window-get-phone__image{
     position: relative;
@@ -1639,4 +1643,12 @@
 }
 .close-modal-window:hover{
     cursor: pointer;
+}
+.modal-window-get-receiving-request__content{
+    flex-direction:column;
+    left:700px;
+}
+.close-modal-window-receiving-request{
+    top:-100px;
+    left:-270px;
 }

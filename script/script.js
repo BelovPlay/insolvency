@@ -43,8 +43,21 @@ getNumber.addEventListener('click',function func(){
     event.preventDefault();
     if(((phoneNumber.value[0]==='7')||(phoneNumber.value[0]==='8')||(phoneNumber.value[0]==='+' && phoneNumber.value[1]==='7'))&&(phoneNumber.value.length<13)){
         numbers.push(phoneNumber.value);
+        ModalWindowRecievingRequest.style.display='block';
+        bgModalWindowRecieving.style.display='block';
+        ModalWindowGetConsult.style.display='none';
         console.log(numbers);
     }else{
         alert('Проверьте правильность введеных данных');
-    }
+    }я
+})
+// Модальное окно получения заявки от клиента
+// Открытие закрытие модального окна получения заявки от клиента
+let BtnCloseModalWindow=document.getElementById('modal-window-get-receiving-request__link');
+let ModalWindowRecievingRequest=document.getElementById('modal-window-get-receiving-request__content');
+let bgModalWindowRecieving=document.getElementById('modal-window-get-receiving-request');
+BtnCloseModalWindow.addEventListener('click',function func(){
+    event.preventDefault();
+    ModalWindowRecievingRequest.style.display='none';
+    bgModalWindowRecieving.style.display='none';
 })
