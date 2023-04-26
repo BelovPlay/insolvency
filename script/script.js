@@ -15,21 +15,20 @@ openModalWindowGetCall.addEventListener('click',function(){
 // Функция закрытия модального окна
 closeModalWindowGetCall.addEventListener('click',function(){
     modalWindowGetCall.style.display='none';
+    MobileNumberModalWindowGetCall.value='';
 })
 // Функция отправки номера в массив при прохождении валидации
 BtnGetCall.addEventListener('click',function(){
     event.preventDefault();
-    if(MobileNumberModalWindowGetCall.value[0]==8 && MobileNumberModalWindowGetCall.value.length<12){
+    if((MobileNumberModalWindowGetCall.value[0]==8 && MobileNumberModalWindowGetCall.value.length<12 && MobileNumberModalWindowGetCall.value.length>10) ||(MobileNumberModalWindowGetCall.value[0]==7 && MobileNumberModalWindowGetCall.value.length<12 && MobileNumberModalWindowGetCall.value.length>10)||(MobileNumberModalWindowGetCall.value[0]=='+' && (MobileNumberModalWindowGetCall.value)[1]=='7' && MobileNumberModalWindowGetCall.value.length<13 && MobileNumberModalWindowGetCall.value.length>11)){
         phoneNumbersForCalling.push(MobileNumberModalWindowGetCall.value);
         console.log(phoneNumbersForCalling);
         ModalWindowSuccces.style.display='block';
+    }else{
+        alert('Проверь корректность введеных данных');
     }
-    // else if(){
-
-    // }else{
-    //     alert('Проверь корректность введеных данных');
-    // }
 })
+// Кнопка для скрытия модальных окон и очищения инпута 
 BtnSuccess.addEventListener('click',function(){
     event.preventDefault();
     modalWindowGetCall.style.display='none';
