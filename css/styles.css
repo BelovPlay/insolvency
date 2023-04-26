@@ -1235,7 +1235,7 @@
 }
 .accordeon__header::before{
     content: "";
-    background-image: url('../img/icon-accordeon-header.png');
+    background-image: url('../img/icon-accordeon-header.png.svg');
     background-size: cover;
     height:50px;
     width:50px;
