@@ -22,14 +22,14 @@
     margin:auto;
 }
 .wrapper{
-    background:url('../img/bg-wrapper.svg') no-repeat;
+    background:url('../img/bg-wrapper.png') no-repeat;
     width: 1903px;
 }
 .container{
     max-width:1240px;
 }
 .main{
-    background:url('../img/bg-main.svg') no-repeat;
+    background:url('../img/bg-main.png') no-repeat;
 }
 .header{
     padding-top: 20px;
@@ -1078,7 +1078,7 @@
 .jur-consult{
     padding-top:100px;
     box-sizing: border-box;
-    background:url('../img/bg-jur.svg') no-repeat;
+    background:url('../img/bg-jur.png') no-repeat;
     margin-bottom: 150px;
 }
 .jur-consult__title{
