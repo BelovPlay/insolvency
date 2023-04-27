@@ -29,7 +29,7 @@
     max-width:1240px;
 }
 .main{
-    background:url('../img/bg-main.png.svg') no-repeat;
+    background:url('../img/bg-main.png') no-repeat;
 }
 .header{
     padding-top: 20px;
