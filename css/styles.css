@@ -22,7 +22,7 @@
     margin:auto;
 }
 .wrapper{
-    background:url('../img/bg-wrapper.png') no-repeat;
+    /* background:url('../img/bg-wrapper.png') no-repeat; */
     width: 1903px;
 }
 .container{
