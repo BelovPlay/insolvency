@@ -16,13 +16,11 @@
     margin: 0px;
     padding: 0px;
     font-family:'Montserrat',sans-serif;
-    /* font-family: 'Montserrat', sans-serif; */
 }
 .wrapper,.container{
     margin:auto;
 }
 .wrapper{
-    /* background:url('../img/bg-wrapper.png') no-repeat; */
     width: 1903px;
 }
 .container{
