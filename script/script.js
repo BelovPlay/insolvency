@@ -109,6 +109,7 @@ BtnGetBankruptcy.addEventListener('click',function(){
     if((MobileNumberGetBankruptcy.value[0]==8 && MobileNumberGetBankruptcy.value.length<12 && MobileNumberGetBankruptcy.value.length>10) ||(MobileNumberGetBankruptcy.value[0]==7 && MobileNumberGetBankruptcy.value.length<12 && MobileNumberGetBankruptcy.value.length>10)||(MobileNumberGetBankruptcy.value[0]=='+' && (MobileNumberGetBankruptcy.value)[1]=='7' && MobileNumberGetBankruptcy.value.length<13 && MobileNumberGetBankruptcy.value.length>11)){
         PhoneNumbersForBankruptcy.push(MobileNumberGetBankruptcy.value);
         console.log(PhoneNumbersForBankruptcy);
+        ModalWindowBankruptcy.style.display='none';
         ModalWindowSuccces.style.display='block';
     }else{
         alert('Проверь корректность введеных данных');
