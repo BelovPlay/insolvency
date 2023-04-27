@@ -57,26 +57,26 @@ BtnSuccess.addEventListener('click',function(){
 // // номера телефонов для предоставления консультаций
 // let phoneNumbersForConsult=[];
 // // Функция открытия модального окна получения консультации
-// openModalWindowGetConsult.addEventListener('click',function(){
-//     event.preventDefault();
-//     modalWindowGetConsult.style.display='block';
-// })
+openModalWindowGetConsult.addEventListener('click',function(){
+    event.preventDefault();
+    modalWindowGetConsult.style.display='block';
+})
 // // Функция закрытия модального окна получения консультации
-// closeModalWindowGetConsult.addEventListener('click',function(){
-//     modalWindowGetConsult.style.display='none';
-//     MobileNumberModalWindowGetConsult.value='';
-// })
+closeModalWindowGetConsult.addEventListener('click',function(){
+    modalWindowGetConsult.style.display='none';
+    MobileNumberModalWindowGetConsult.value='';
+})
 // // Функция отправки номера в массив при прохождении валидации получения консультации
-// BtnGetConsult.addEventListener('click',function(){
-//     event.preventDefault();
-//     if((MobileNumberModalWindowGetConsult.value[0]==8 && MobileNumberModalWindowGetConsult.value.length<12 && MobileNumberModalWindowGetConsult.value.length>10) ||(MobileNumberModalWindowGetConsult.value[0]==7 && MobileNumberModalWindowGetConsult.value.length<12 && MobileNumberModalWindowGetConsult.value.length>10)||(MobileNumberModalWindowGetConsult.value[0]=='+' && (MobileNumberModalWindowGetConsult.value)[1]=='7' && MobileNumberModalWindowGetConsult.value.length<13 && MobileNumberModalWindowGetConsult.value.length>11)){
-//         phoneNumbersForConsult.push(MobileNumberModalWindowGetConsult.value);
-//         console.log(phoneNumbersForConsult);
-//         ModalWindowSuccces.style.display='block';
-//     }else{
-//         alert('Проверь корректность введеных данных');
-//     }
-// })
+BtnGetConsult.addEventListener('click',function(){
+    event.preventDefault();
+    if((MobileNumberModalWindowGetConsult.value[0]==8 && MobileNumberModalWindowGetConsult.value.length<12 && MobileNumberModalWindowGetConsult.value.length>10) ||(MobileNumberModalWindowGetConsult.value[0]==7 && MobileNumberModalWindowGetConsult.value.length<12 && MobileNumberModalWindowGetConsult.value.length>10)||(MobileNumberModalWindowGetConsult.value[0]=='+' && (MobileNumberModalWindowGetConsult.value)[1]=='7' && MobileNumberModalWindowGetConsult.value.length<13 && MobileNumberModalWindowGetConsult.value.length>11)){
+        phoneNumbersForConsult.push(MobileNumberModalWindowGetConsult.value);
+        console.log(phoneNumbersForConsult);
+        ModalWindowSuccces.style.display='block';
+    }else{
+        alert('Проверь корректность введеных данных');
+    }
+})
 // // Кнопка для скрытия модальных окон и очищения инпута получения консультации
 // BtnSuccess.addEventListener('click',function(){
 //     event.preventDefault();
