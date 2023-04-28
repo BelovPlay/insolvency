@@ -119,26 +119,23 @@ BtnGetBankruptcy.addEventListener('click',function(){
     }
 })
 //====================================================================================================Модальное окно получения консультации=============================================================================
-// Модальное окна получения консультации
-let =document.getElementById('');
-// Ссылка для открытия модального окна получения консультации
-let =document.getElementById('');
-// Кнопка для закрытия модального окна получения консультации
-let =document.getElementById('');
-// поле для ввода мобильного телефона 
-let =document.getElementById('');
-// кнопка для заявки получения консультации
-let =document.getElementById('');
-// номера телефонов для предоставления консультации
-let PhoneNumbersForConsult=[];
-// Кнопка для скрытия модальных окон и очищения инпута получения 
-let =document.getElementById('');
-// Функция открытия модального окна получения консультации
-let =document.getElementById('');
-// Функция закрытия модального окна получения консультации
-let =document.getElementById('');
-// Функция отправки номера в массив при прохождении валидации получения консультации
-let =document.getElementById('');
+let openModalWindowGetConsultSecond=document.getElementById('linkopenwindowconsultsecond');
+openModalWindowGetConsultSecond.addEventListener('click',function(){
+    event.preventDefault();
+    modalWindowGetConsult.style.display='block';
+})
+BtnGetCall.addEventListener('click',function(){
+    event.preventDefault();
+    if((MobileNumberModalWindowGetCall.value[0]==8 && MobileNumberModalWindowGetCall.value.length<12 && MobileNumberModalWindowGetCall.value.length>10) ||(MobileNumberModalWindowGetCall.value[0]==7 && MobileNumberModalWindowGetCall.value.length<12 && MobileNumberModalWindowGetCall.value.length>10)||(MobileNumberModalWindowGetCall.value[0]=='+' && (MobileNumberModalWindowGetCall.value)[1]=='7' && MobileNumberModalWindowGetCall.value.length<13 && MobileNumberModalWindowGetCall.value.length>11)){
+        phoneNumbersForCalling.push(MobileNumberModalWindowGetCall.value);
+        console.log('Номера для получения звонка');
+        console.log(phoneNumbersForCalling);
+        ModalWindowSuccces.style.display='block';
+
+    }else{
+        alert('Проверь корректность введеных данных');
+    }
+})
 //====================================================================================================Модальное окно фиксации заявки=============================================================================
 // // Модальное окна получения  фиксации заявки
 // let =document.getElementById('');
